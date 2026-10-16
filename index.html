@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>About | Saeed VPS Backup</title><style>body{font:17px/1.65 system-ui,sans-serif;color:#18232f;background:#f6f8fa;margin:0}main{max-width:760px;margin:40px auto;padding:28px;background:white;border:1px solid #d0d7de;border-radius:12px}h1,h2{line-height:1.25}h1{font-size:2rem}h2{font-size:1.25rem;margin-top:1.8rem}a{color:#075bb5}nav{margin-bottom:24px}footer{margin-top:32px;font-size:.9rem;color:#52606d}@media(max-width:800px){main{margin:12px;padding:20px}}</style></head>
+<body><main><nav aria-label="Main"><a href="index.html">Saeed VPS Backup</a> · <a href="privacy.html">Privacy</a></nav><h1>Saeed VPS Backup</h1>
+<p>A private backup integration operated by Saeed, the owner of the connected Google account, for backing up files from his VPS to his own Google Drive.</p>
+<h2>Purpose and setup status</h2>
+<p>The integration is being configured. Automated backups have not yet been enabled. Before the first backup, restic will be configured to encrypt backup contents locally, and backup and restore will be tested.</p>
+<p>The intended workflow creates versioned, encrypted backup snapshots with restic and transfers repository files to Google Drive through rclone. Backup files are intended to remain private to the account owner unless he explicitly changes sharing.</p>
+<h2>Google Drive access</h2>
+<p>The integration requests the <code>drive.file</code> permission. This permits access to files created by the integration and files explicitly authorized for it, rather than general access to every file in the account.</p>
+<p>Google handles sign-in and consent. The integration does not collect the account's Google password.</p>
+<h2>Privacy and contact</h2>
+<p>Read the <a href="privacy.html">privacy statement</a> for data handling, access revocation and deletion. For questions, use the support email shown on the Saeed VPS Backup Google consent screen.</p><footer>Information for a private, single-user backup integration. Updated October 16, 2026.</footer></main></body></html>
