@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Privacy | Saeed VPS Backup</title><style>body{font:17px/1.65 system-ui,sans-serif;color:#18232f;background:#f6f8fa;margin:0}main{max-width:760px;margin:40px auto;padding:28px;background:white;border:1px solid #d0d7de;border-radius:12px}h1,h2{line-height:1.25}h1{font-size:2rem}h2{font-size:1.25rem;margin-top:1.8rem}a{color:#075bb5}nav{margin-bottom:24px}footer{margin-top:32px;font-size:.9rem;color:#52606d}@media(max-width:800px){main{margin:12px;padding:20px}}</style></head>
+<body><main><nav aria-label="Main"><a href="index.html">Saeed VPS Backup</a> · <a href="privacy.html">Privacy</a></nav><h1>Privacy statement</h1>
+<p>This statement covers Saeed VPS Backup, a private, single-user integration operated by the owner of the connected Google account. It describes the intended configuration while setup is in progress; automated backups have not yet been enabled.</p>
+<h2>Information and permissions</h2>
+<p>The Google Drive permission requested is <code>https://www.googleapis.com/auth/drive.file</code>. The integration uses it to create, list, read, update and delete its authorized backup repository files, including metadata required for backup, integrity checks, retention and restore. It does not request general access to all existing Drive documents, Gmail, contacts or calendars.</p>
+<p>Google issues OAuth credentials after the owner grants consent. Those credentials allow the VPS to connect automatically. They will be stored in a file with restricted permissions on the VPS and excluded from the source-code repository and public website. Google sign-in occurs with Google; the integration does not collect the owner's Google password.</p>
+<h2>Backup contents and use</h2>
+<p>The owner chooses which VPS files are included. Before backup is enabled, restic will be configured to encrypt backup contents locally before uploading them to Google Drive. The owner will keep a separate recovery copy of the encryption password outside the VPS.</p>
+<p>The integration uses authorized Drive data for backup creation, repository maintenance, integrity checks and restoration. It does not use that data for advertising or sell it. Backup data remains in the owner's Google Drive unless the owner deliberately copies, shares or removes it.</p>
+<h2>Providers and this website</h2>
+<p>The VPS provider hosts the source system; Google Drive stores the backup repository. These providers process information under their own service terms and privacy policies.</p>
+<p>This information website contains no sign-in form, analytics script or tracking cookie set by the site itself. When hosted on GitHub Pages, GitHub logs visitor IP addresses for security purposes under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. Visiting this site does not grant access to Google Drive.</p>
+<h2>Retention and deletion</h2>
+<p>The account owner controls backup retention. Once enabled, stored backup files can remain until removed through the backup retention process or deleted from Google Drive. Removal of an individual source file does not necessarily remove older backup snapshots containing it.</p>
+<h2>Revoking access and recovery</h2>
+<p>The owner can revoke the integration's access through the third-party connections settings of the Google Account. Revocation stops future authenticated access; existing backup files must be removed separately if deletion is desired.</p>
+<p>Restoring encrypted backups requires access to the backup repository and the encryption password. Losing that password can prevent recovery.</p>
+<h2>Contact and changes</h2>
+<p>For questions or a data request, use the support email displayed on the Saeed VPS Backup Google consent screen. This statement will be updated when the workflow or data handling changes.</p><footer>Information for a private, single-user backup integration. Updated October 16, 2026.</footer></main></body></html>
